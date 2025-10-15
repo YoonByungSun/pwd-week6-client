@@ -13,7 +13,7 @@ const api = axios.create({
 // 공개 조회 전용 인스턴스: 교차 출처 시 자격증명(쿠키) 제외
 const publicApi = axios.create({
   baseURL: API_BASE_URL,
-  withCredentials: true,
+  withCredentials: false,
   timeout: 10000,
 });
 
